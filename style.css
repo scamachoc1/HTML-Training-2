@@ -32,15 +32,12 @@ h2 {
     font-size: 1rem;
     border-radius: 10rem;
     font-family: 'montbold';
-    text-align: center;
     padding: 1rem 2.7rem;
     margin: 3rem 0rem;
 }
 
 p {
     font-family: 'montregular';
-
-    text-align: center;
     font-size: 1.5rem;
     line-height: 2.7rem;
 }
@@ -92,7 +89,6 @@ header img {
 
 #main-1 h1 {
     color: white;
-    text-align: center;
     width: 90%;
     max-width: 8em;
     line-height: 1.1;
