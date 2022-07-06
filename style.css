@@ -18,7 +18,7 @@ h2,
     font-family: 'montbold';
 }
 
-h1 {
+h1 { 
     font-size: 4rem;
 }
 
@@ -124,19 +124,21 @@ video {
 }
 
 /*PLAY BUTTON*/
-.play-button {
+#play_button {
     position: absolute;
     left: 48%;
     top: 48%;
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
+    border: none;
+    cursor: pointer;
     background: var(--cute-green);
 }
 .arrow-right {
     position: absolute;
     left: 1rem;
-    top: .6rem;
+    top: .53rem;
     width: 0;
     height: 0;
     border-top: 1rem solid transparent;
@@ -145,6 +147,12 @@ video {
     border-left: 1.5rem solid white;
 }
 
+.inactive{
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
 /*MAIN 4 */
 #main-4 h2 {
     margin-top: 3rem;

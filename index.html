@@ -28,30 +28,32 @@
             <img src="./assets/house.png" alt="house">
             <h2>
                 You now have access to powerful tools, valuable resources, and the world's only community-inclusive real
-                estate audience
+                estate audience.
             </h2>
             <a href="#" class="button">
                 My Account
             </a>
         </div>
         <div id="main-3">
-            <video src="./assets/video.mp4" poster="./assets/logo.png" controls>
-            </video>
-            <a href="#">
-                <div class="play-button">
-                    <div class="arrow-right"></div>
-                </div>
-            </a>
+            <div id="video_container">
+                <video id="video" poster="./assets/logo.png" type="video/mp4">
+                    <source src="./assets/video.mp4" >
+                </video>
+
+            </div>
+            <button id="play_button" type="button">
+                <div class="arrow-right"></div>
+            </button>
         </div>
         <div id="main-4">
             <h2>
                 Hit the ground running
             </h2>
             <p>
-                Dive into all the awesome features right away to learn more about your JFinder account
+                Dive into all the awesome features right away to learn more about your JFinder account.
             </p>
             <a href="#" class="button">
-                Ge Started!
+                Get Started!
             </a>
         </div>
     </main>
@@ -62,6 +64,19 @@
         </p>
         <img src="./assets/logo.png" alt="jfinder logo">
     </footer>
+
+    <script>
+        var playButton = document.getElementById("play_button");
+        playButton.addEventListener("click", function () {
+            if (video.paused) {
+                video.play();
+                playButton.classList.toggle("inactive");
+            } else {
+                video.pause();
+                playButton.classList.toggle("active");
+            }
+        });
+    </script>
 </body>
 
 </html>
