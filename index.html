@@ -40,11 +40,10 @@
                 <video id="video" poster="./assets/logo.png" type="video/mp4">
                     <source src="./assets/video.mp4" >
                 </video>
-
+                <button id="play_button" type="button">
+                    <div class="arrow-right"></div>
+                </button>
             </div>
-            <button id="play_button" type="button">
-                <div class="arrow-right"></div>
-            </button>
         </div>
         <div id="main-4">
             <h2>
@@ -71,10 +70,10 @@
         playButton.addEventListener("click", function () {
             if (video.paused) {
                 video.play();
-                playButton.classList.toggle("inactive");
+                playButton.classList.add("inactive");
             } else {
                 video.pause();
-                playButton.classList.toggle("active");
+                playButton.classList.remove("inactive");
             }
         });
     </script>

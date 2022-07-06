@@ -116,18 +116,20 @@ header img {
 /*MAIN 3 */
 #main-3 {
     background: #def6e8;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-video {
+#video_container {
+    position: relative;
     margin: 4rem 0;
 }
-
 /*PLAY BUTTON*/
 #play_button {
     position: absolute;
-    left: 48%;
-    top: 48%;
+    left: calc(50% - 1.5rem);
+    top: calc(50% - 1.5rem);
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
@@ -149,10 +151,10 @@ video {
 
 .inactive{
     opacity: 0;
-    transition: all .5s;
+    transition: all .2s;
 }
-.active{
-    opacity: 1;
+.inactive:hover{
+    opacity: .3;
 }
 /*MAIN 4 */
 #main-4 h2 {
